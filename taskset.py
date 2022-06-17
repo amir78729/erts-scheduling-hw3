@@ -171,7 +171,7 @@ class Task(object):
         @TODO
 
     def __str__(self):
-        return "task {0}: (Φ,T,C,D,∆) = ({1}, {2}, {3}, {4}, {5})".format(self.id, self.offset, self.period, self.wcet,
+        return "task {0}:\n  Φ{0} = {1}\n  T{0} = {2}\n  C{0} = {3}\n  D{0} = {4}\n  ∆{0} = {5}".format(self.id, self.offset, self.period, self.wcet,
                                                                           self.relativeDeadline, self.sections)
 
 
